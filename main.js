@@ -1,4 +1,5 @@
 const fetchData = require("./api");
+const outputTask = require("./taskOutput")
 
 /**
  * 
@@ -33,7 +34,8 @@ async function runProgram(){
       }
       if (isNumber(args[0])){
             const response = await fetchData(`https://jsonplaceholder.typicode.com/todos/${args[0]}`)
-            console.log(response)
+
+            outputTask(response)
       }
       else{
             console.log("You must enter a number")
