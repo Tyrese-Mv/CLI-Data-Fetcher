@@ -14,3 +14,6 @@ test('checks if 1ben is a number', ()=>{
 test('checks if "" is a number', ()=>{
     expect(isNumber("")).toBe(false);
 })
+test('checks if empty list is a number', ()=>{
+    expect(isNumber([])).toBe(false);
+})
