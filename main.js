@@ -40,4 +40,4 @@ async function runProgram(){
       } 
 }
 runProgram()
-module.exports = isNumber;
+module.exports = isNumber, runProgram;

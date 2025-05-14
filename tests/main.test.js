@@ -1,4 +1,4 @@
-const isNumber = require('./main')
+const isNumber = require('../main')
 
 test('checks if 1 is a number', ()=>{
     expect(isNumber("1")).toBe(true);
